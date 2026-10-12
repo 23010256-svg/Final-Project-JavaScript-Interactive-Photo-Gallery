@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="addTabIndexes()">
+
+    <h1>Accessible Interactive Photo Gallery</h1>
+    <h2>Explore our collection of wildlife photography</h2>
+
+    <!-- Khung hiển thị chính -->
+    <div id="image">
+        Hover or focus on an image below to display here.
+    </div>
+
+    <!-- 6 ảnh thu nhỏ có alt đầy đủ và các sự kiện mouse + focus -->
+    <div class="preview-box">
+        <img class="preview" alt="Puppy playing in the grass" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Kitten resting indoors" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Majestic tiger walking through nature" src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Panda eating fresh bamboo" src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Fox looking curious outdoors" src="https://images.unsplash.com/photo-1474511320723-9a56873867b5" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Owl sitting gracefully on a tree branch" src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
